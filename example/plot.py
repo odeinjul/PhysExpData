@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+import matplotlib
 from physicsexp.mainfunc import *
 from physicsexp.gendocx import *
-
+import matplotlib as mpl
+mpl.rcParams['font.family'] = 'sans-serif'
+mpl.rcParams['font.sans-serif'] = 'SimHei'
+mpl.rcParams['axes.unicode_minus'] = False
 # read data
 # # 1
 # data, data_orig, name = readdata('./data.txt', need=0b111)
